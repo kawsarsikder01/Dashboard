@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<!--Custom Css file-->
+	<link rel="stylesheet" href="assets/css/custom_css.css">
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="../../../../global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
-
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
@@ -26,11 +27,13 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switch.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_advanced.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_inputs.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -233,7 +236,7 @@
 				<a href="#" class="sidebar-mobile-main-toggle">
 					<i class="icon-arrow-left8"></i>
 				</a>
-				Navigation
+				<span class="font-weight-semibold">Navigation</span>
 				<a href="#" class="sidebar-mobile-expand">
 					<i class="icon-screen-full"></i>
 					<i class="icon-screen-normal"></i>
@@ -321,8 +324,8 @@
 								<span>Categore</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categoreys</a></li>
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categorey</a></li>								
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categores</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categore</a></li>								
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -375,10 +378,20 @@
 							<i class="fa fa-shipping-fast"></i>
 							<span>Orders</span></a>
 						</li>
+						
+
+
+
+						<!--ksdfsla;gnlfmaslmlsmcdknjkgams,ldsaaaaaangalsdkkgjdkalsc,gjrnfkmelsfjfkdsl,jfk dc,sdkc,s fvdm-->
+
 
 
 
 						
+							
+						<!-- /main -->
+
+						<!-- Forms -->
 						
 						<!-- /page kits -->
 
@@ -400,7 +413,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Categorey</span> - Categores</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Product</span> - Add Product</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -426,8 +439,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_advanced.html" class="breadcrumb-item">Categorey</a>
-							<span class="breadcrumb-item active">Categores</span>
+							<a href="form_inputs.html" class="breadcrumb-item">Product</a>
+							<span class="breadcrumb-item active">Add Product</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -464,256 +477,59 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Page length options -->
-				
-				<!-- /page length options -->
-
-
-				<!-- DOM positioning -->
-
-
-
-				
-				<!-- /DOM positioned -->
-
-
-				<!-- Highlighting rows and columns -->
+				<!-- Form inputs -->
 				<div class="card">
-					<table class="table table-bordered table-hover datatable-highlight">
-						<thead>
-							<tr>
-								<th class="text-center">Categorey Name</th>
-								<th class="text-center">Categorey Type</th>
-								<th class="text-center">Description</th>
-								<th class="text-center">Show</th>
-								<th class="text-center">Edit</th>
-								<th class="text-center">Delete</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="text-center">Marth</td>
-								<td class="text-center"><a href="#">Enright</a></td>
-								<td class="text-center">Traffic Court Referee</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Jackelyn</td>
-								<td class="text-center">Weible</td>
-								<td class="text-center"><a href="#">Airline Transport Pilot</a></td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Aura</td>
-								<td class="text-center">Hard</td>
-								<td class="text-center">Business Services Sales Representative</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Nathalie</td>
-								<td class="text-center"><a href="#">Pretty</a></td>
-								<td class="text-center">Drywall Stripper</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Sharan</td>
-								<td class="text-center">Leland</td>
-								<td class="text-center">Aviation Tactical Readiness Officer</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Maxine</td>
-								<td class="text-center"><a href="#">Woldt</a></td>
-								<td class="text-center"><a href="#">Business Services Sales Representative</a></td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Sylvia</td>
-								<td class="text-center"><a href="#">Mcgaughy</a></td>
-								<td class="text-center">Hemodialysis Technician</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Lizzee</td>
-								<td class="text-center"><a href="#">Goodlow</a></td>
-								<td class="text-center">Technical Services Librarian</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Kennedy</td>
-								<td class="text-center">Haley</td>
-								<td class="text-center">Senior Marketing Designer</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Chantal</td>
-								<td class="text-center"><a href="#">Nailor</a></td>
-								<td class="text-center">Technical Services Librarian</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Delma</td>
-								<td class="text-center">Bonds</td>
-								<td class="text-center">Lead Brand Manager</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Roland</td>
-								<td class="text-center">Salmos</td>
-								<td class="text-center"><a href="#">Senior Program Developer</a></td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Coy</td>
-								<td class="text-center">Wollard</td>
-								<td class="text-center">Customer Service Operator</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Maxwell</td>
-								<td class="text-center">Maben</td>
-								<td class="text-center">Regional Representative</td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-							<tr>
-								<td class="text-center">Cicely</td>
-								<td class="text-center">Sigler</td>
-								<td class="text-center"><a href="#">Senior Research Officer</a></td>
-								<td class="text-center">
-									<a href="#" class="text-decoration-none border px-3 fs-3 py-1 bg-primary">Show</a>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-warning px-3">Edit</button>
-								</td>
-								<td class="text-center">
-									<button type="button"class="bg-danger">Delete</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					
+
+					<div class="card-body">
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Add Your Product</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Product Name</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Product Type</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="Enter your product type.....">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Description</label>
+									<div class="col-lg-10">
+										<textarea rows="3" cols="3" class="form-control" placeholder="Writ your product description"></textarea>
+									</div>
+								</div>
+								<div class="form-check form-check-switchery form-check-switchery-double d-inline-block">
+									<label class="form-check-label">
+										E-sale Enabled
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+									</label>
+								</div>
+								<div class="form-check form-check-switchery form-check-switchery-double d-inline-block">
+									<label class="form-check-label">
+										E-Delivary Outside
+										<input type="checkbox" class="form-check-input-switchery" id="e-check" checked data-fouc>
+									</label>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Select your Product imgae :</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control-plaintext">
+									</div>
+								</div>						
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Add Product<!--<i class="icon-paperplane ml-2">--></i></button>
+							</div>
+						</form>
+					</div>
 				</div>
-				<!-- /highlighting rows and columns -->
-
-
-				<!-- Column rendering -->
-
-
-
-
-				
-				<!-- /column rendering -->
+				<!-- /form inputs -->
 
 			</div>
 			<!-- /content area -->

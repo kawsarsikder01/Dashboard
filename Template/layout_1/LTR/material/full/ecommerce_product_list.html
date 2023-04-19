@@ -8,6 +8,7 @@
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
@@ -323,33 +324,65 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><span>Catagores</span></a>
+							<a href="#" class="nav-link">
+								<i class="icon-list-unordered"></i>
+								<span>Categore</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="#" class="nav-link">Catagorey List</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Add Catagorey</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Delete Catagorey</a></li>
-								
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categoreys</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categorey</a></li>								
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a href="ecommerce_customers.html" class="nav-link">Customers</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><span>Product</span></a>
+							<a href="#" class="nav-link">
+								<i class="icon-indent-decrease"></i>
+								<span>Product</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="ecommerce_product_list.html" class="nav-link">Product List</a></li>
-								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Product</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Delete Product</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Update Product</a></li>
+								<li class="nav-item"><a href="add_product.html" class="nav-link">Add Product</a></li>
+								<li class="nav-item"><a href="ecommerce_product_list.html" class="nav-link">Products</a></li>								
+							</ul>
 								
-									</ul>
-								<ul class="nav nav-group-sub">
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-mountain"></i>
+								<span>Outdoor</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Outdoor Place</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Outdoor</a></li>								
+							</ul>
+								
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-table"></i>
+								<span>Table Setup</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Layout</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Layout 1</a></li>
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Layout 2</a></li>	
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Layouts</a></li>							
+							</ul>
+								
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="icon-android"></i>
+								<span>App Config</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Banner Image</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">About</a></li>
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Terms and condition</a></li>								
 							</ul>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/material/full/index.html" class="nav-link"> <span>Orders</span></a></li>
-						<li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link"> <span>Orders Details</span></a></li>
+						<li class="nav-item"><a href="../../../RTL/material/full/index.html" class="nav-link">
+							<i class="fa fa-shipping-fast"></i>
+							<span>Orders</span></a>
+						</li>
 
 						<!-- Forms -->
 						
@@ -373,7 +406,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">ECommerce</span> - Product List</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Product</span> - Products</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -399,8 +432,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="ecommerce_product_list.html" class="breadcrumb-item">ECommerce</a>
-							<span class="breadcrumb-item active">Product list</span>
+							<a href="ecommerce_product_list.html" class="breadcrumb-item">Product</a>
+							<span class="breadcrumb-item active">Products</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -470,19 +503,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$49.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">85 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$49.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5"> Delete</button>
 								</div>
 							</div>
 						</div>
@@ -512,21 +534,10 @@
 										<li class="list-inline-item">Add to <a href="#">wishlist</a></li>
 									</ul>
 								</div>
-
+								
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$25.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-half font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">34 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$49.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5"> Delete</button>
 								</div>
 							</div>
 						</div>
@@ -557,19 +568,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$63.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">63 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$63.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -600,19 +600,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$57.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">74 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$57.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -643,19 +632,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$89.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">39 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$89.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -686,19 +664,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$35.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">38 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$35.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -729,19 +696,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$143.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-half font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">48 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$143.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -772,19 +728,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$93.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-half font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">64 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$93.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -815,19 +760,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$36.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">94 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$36.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -858,19 +792,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$25.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-half font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">15 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$25.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -901,19 +824,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$47.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">145 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$47.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -944,19 +856,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$85.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">37 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$85.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -987,19 +888,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$47.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">64 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$47.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -1030,19 +920,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$76.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-empty3 font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">2 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$76.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
@@ -1073,19 +952,8 @@
 								</div>
 
 								<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-									<h3 class="mb-0 font-weight-semibold">$59.99</h3>
-
-									<div>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-full2 font-size-base text-warning-300"></i>
-										<i class="icon-star-half font-size-base text-warning-300"></i>
-									</div>
-
-									<div class="text-muted">32 reviews</div>
-
-									<button type="button" class="btn bg-teal-400 mt-3"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+									<h3 class="mb-0 font-weight-semibold mb-3">$59.99</h3>
+									<button type="button" class="btn bg-teal-400 mt-5">Delete</button>
 								</div>
 							</div>
 						</div>
