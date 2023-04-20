@@ -5,10 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<!--Custom Css file-->
+	<link rel="stylesheet" href="assets/css/summer_note.css">
 
 	<!-- Global stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
@@ -306,43 +309,65 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><span>Catagores</span></a>
+							<a href="#" class="nav-link">
+								<i class="icon-list-unordered"></i>
+								<span>Categore</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="#" class="nav-link">Catagorey List</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Add Catagorey</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Delete Catagorey</a></li>
-								
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categoreys</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categorey</a></li>								
 							</ul>
-						</li>						
+						</li>					
+						
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><span>Customers</span></a>
+							<a href="#" class="nav-link">
+								<i class="icon-indent-decrease"></i>
+								<span>Product</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Customers List</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Customers Details</a></li>
+								<li class="nav-item"><a href="add_product.html" class="nav-link">Add Product</a></li>
+								<li class="nav-item"><a href="ecommerce_product_list.html" class="nav-link">Products</a></li>								
+									</ul>
 								
-									</ul>
-								<ul class="nav nav-group-sub">
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><span>Product</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Product</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Delete Product</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Update Product</a></li>
-									</ul>
-								<ul class="nav nav-group-sub">
-							</ul>
-						</li>
-						<li class="nav-item"><a href="../../../RTL/material/full/index.html" class="nav-link"> <span>Orders</span></a></li>
-						<li class="nav-item"><a href="../../../RTL/material/full/index.html" class="nav-link"> <span>Orders Details</span></a></li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Data visualization"></i></li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Extensions"></i></li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Tables"></i></li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Page kits"></i></li>
+									<li class="nav-item nav-item-submenu">
+										<a href="#" class="nav-link">
+											<i class=" fa fa-mountain"></i>
+											<span>Outdoor</span></a>
+			
+										<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+											<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Outdoor Place</a></li>
+											<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Outdoor</a></li>								
+										</ul>
+											
+									</li>
+									<li class="nav-item nav-item-submenu">
+										<a href="#" class="nav-link">
+											<i class=" fa fa-table"></i>
+											<span>Table Setup</span></a>
+			
+										<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+											<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add Layout</a></li>
+											<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Layout 1</a></li>
+											<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Layout 2</a></li>	
+											<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Layouts</a></li>							
+										</ul>
+											
+									</li>
+									<li class="nav-item nav-item-submenu">
+										<a href="#" class="nav-link">
+											<i class="icon-android"></i>
+											<span>App Config</span></a>
+			
+										<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+											<li class="nav-item"><a href="gallery_titles.html" class="nav-link">Banner Image</a></li>
+											<li class="nav-item"><a href="appconfig_about.html" class="nav-link">About</a></li>
+											<li class="nav-item"><a href="" class="nav-link">Terms and condition</a></li>								
+										</ul>
+									</li>
+									<li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">
+										<i class="fa fa-shipping-fast"></i>
+										<span>Orders</span></a>
+									</li>
 					</ul>
 				</div>
 			</div>
@@ -351,7 +376,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Dashboard</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">App Config</span> - About</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 					<div class="header-elements d-none">
@@ -375,7 +400,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<span class="breadcrumb-item active">Dashboard</span>
+							<a href="" class="breadcrumb-item">App config</a>
+							<span class="breadcrumb-item active">About</span>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -403,38 +429,20 @@
 				</div>
 			</div>
 			<div class="content">
-				<div class="row">
-					<div class="col-xl-7">
+				<div id="editor-container">
+					<div id="toolbar">
+						<button id="bold-btn">Bold</button>
+						<button id="italic-btn">Italic</button>
+						<button id="underline-btn">Underline</button>
+						<!-- Add more formatting buttons as needed -->
 					</div>
-					<div class="col-xl-5">
-					</div>
+					<div id="editor" contenteditable="true"></div>
 				</div>
-				<div class="row">
-					<div class="col-xl-8">
-					</div>
-					</div>
+				
 			</div>
-			<div class="navbar navbar-expand-lg navbar-light">
-				<div class="text-center d-lg-none w-100">
-					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
-						<i class="icon-unfold mr-2"></i>
-						Footer
-					</button>
-				</div>
-
-				<div class="navbar-collapse collapse" id="navbar-footer">
-					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
-					</span>
-
-					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
-						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
-					</ul>
-				</div>
-			</div>
+			
 		</div>
 	</div>
+	<script src="assets/js/summer_note.js"></script>
 </body>
 </html>
