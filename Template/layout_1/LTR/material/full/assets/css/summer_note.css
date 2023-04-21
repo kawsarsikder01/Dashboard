@@ -18,3 +18,27 @@
     border: 1px solid #ccc;
     padding: 10px;
 }
+#bold-btn{
+    background-color:#222;
+    color:white;
+}
+#italic-btn{
+    background-color:#222;
+    color:white;
+}
+#underline-btn{
+    background-color:#222;
+    color:white;
+}
+#bold-btn:hover{
+    background-color:#fff;
+    color:black;
+}
+#italic-btn:hover{
+    background-color:#fff;
+    color:black;
+}
+#underline-btn:hover{
+    background-color:#fff;
+    color:black;
+}
