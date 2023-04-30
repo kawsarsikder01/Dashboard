@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<title>Collage Canteen</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="../../../../global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
@@ -25,10 +26,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/media/fancybox.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/gallery.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_advanced.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -36,7 +38,7 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-dark bg-dark navbar-static">
+	<div class="navbar navbar-expand-md navbar-dark bg-dark navbar-static ">
 		<div class="navbar-brand">
 			<a href="index.html" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
@@ -221,10 +223,10 @@
 
 
 	<!-- Page content -->
-	<div class="page-content">
+	<div class="page-content ">
 
 		<!-- Main sidebar -->
-		<div class="sidebar sidebar-dark position-sticky sidebar-main sidebar-expand-md">
+		<div class="sidebar sidebar-dark text-white sidebar-main sidebar-expand-md">
 
 			<!-- Sidebar mobile toggler -->
 			<div class="sidebar-mobile-toggler text-center">
@@ -296,10 +298,9 @@
 					</div>
 				</div>
 				<!-- /user menu -->
-
-
 				<!-- Main navigation -->
-				<div class="card card-sidebar-mobile bg-dark text-white">
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile bg-dark text-white" >
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
@@ -319,8 +320,19 @@
 								<span>Categore</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categoreys</a></li>
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categores</a></li>
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categorey</a></li>								
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-user-friends"></i>
+								<span>Customer</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Customers</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Customers</a></li>	
+                                <li class="nav-item"><a href="form_inputs.html" class="nav-link">Customers Review</a></li>							
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -364,36 +376,42 @@
 								<span>App Config</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="gallery_titles.html" class="nav-link">Banner Image</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Banner Image</a></li>
 								<li class="nav-item"><a href="appconfig_about.html" class="nav-link">About</a></li>
 								<li class="nav-item"><a href="" class="nav-link">Terms and condition</a></li>								
 							</ul>
 						</li>
-						<li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">
+                        <li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">
 							<i class="fa fa-shipping-fast"></i>
 							<span>Orders</span></a>
 						</li>
-						<!-- /page kits -->
+                        <li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-cogs"></i>
+								<span>Setting</span></a>
 
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add User</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Users</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">User Role</a></li>								
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Permissions</a></li>
+							</ul>
+								
+						</li>
 					</ul>
 				</div>
 				<!-- /main navigation -->
-
 			</div>
-			<!-- /sidebar content -->
-			
+			<!-- /sidebar content -->			
 		</div>
 		<!-- /main sidebar -->
-
-
 		<!-- Main content -->
 		<div class="content-wrapper">
-
 			<!-- Page header -->
 			<div class="page-header page-header-dark">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">App Config</span> - Banner Imgae</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Customer</span> - Customer List</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -419,8 +437,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="gallery_titles.html" class="breadcrumb-item">App Config</a>
-							<span class="breadcrumb-item active">Banner Image</span>
+							<a href="datatable_advanced.html" class="breadcrumb-item"> Customer</a>
+							<span class="breadcrumb-item active"> Customer List</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -451,153 +469,202 @@
 					</div>
 				</div>
 			</div>
-			<div class="content bg-dark text-white">
+			<!-- /page header -->
 
-				<!-- Image grid -->
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						Banner Image
-					</h6>
-					
+
+			<!-- Content area -->
+			<div class="content  bg-dark text-white">
+				<!-- Highlighting rows and columns -->
+				<div class="card bg-dark text-white">
+					<table class="table table-bordered datatable-highlight bg-dark text-white">
+						<thead>
+							<tr>
+								<th class="text-center">Customer ID</th>
+								<th class="text-center">Join Date</th>
+								<th class="text-center">Customer Name</th>
+								<th class="text-center">Location</th>
+								<th class="text-center">Total Spent</th>
+								<th class="text-center">Last Order</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+							<tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+                            <tr>
+								<td class="text-center">#0001234</td>
+								<td class="text-center">26 March 2020, 12:42 AM</td>
+								<td class="text-center">Olivia Shine</td>
+								<td class="text-center">35 Station Road London</td>
+								<td class="text-center">$82.46</td>
+								<td class="text-center">$8.42</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-
-				<div class="row ">
-					<div class="col-sm-6 col-xl-3 ">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="assets/images/chicken-chaap.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-xl-3 ">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="assets/images/chicken-chaap.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-3">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-
-									
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-3">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-
-									
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="row">
-				</div>
-				<div class="row">				
-
-				</div>
-
-				<div class="row">
-				</div>
-
-			
-			<!-- /footer -->
-
+				<!-- /highlighting rows and columns -->
+			</div>
+			<!-- /content area -->
 		</div>
 		<!-- /main content -->
-
 	</div>
 	<!-- /page content -->
-
 </body>
 </html>

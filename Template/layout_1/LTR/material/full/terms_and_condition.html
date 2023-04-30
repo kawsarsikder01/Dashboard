@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+	<title>Collage Canteen</title>
+	<!--Custom Css file-->
+	<link rel="stylesheet" href="assets/css/custom_css.css">
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -25,15 +27,18 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/media/fancybox.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switch.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/gallery.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_inputs.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body>
+<body >
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark bg-dark navbar-static">
@@ -73,7 +78,7 @@
 						Connect
 					</a>
 
-					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+					<div class="dropdown-menu dropdown-menu-dark dropdown-content wmin-md-350">
 						<div class="dropdown-content-body p-2">
 							<div class="row no-gutters">
 								<div class="col-12 col-sm-4">
@@ -231,7 +236,7 @@
 				<a href="#" class="sidebar-mobile-main-toggle">
 					<i class="icon-arrow-left8"></i>
 				</a>
-				Navigation
+				<span class="font-weight-semibold">Navigation</span>
 				<a href="#" class="sidebar-mobile-expand">
 					<i class="icon-screen-full"></i>
 					<i class="icon-screen-normal"></i>
@@ -299,7 +304,7 @@
 
 
 				<!-- Main navigation -->
-				<div class="card card-sidebar-mobile bg-dark text-white">
+				<div class="card card-sidebar-mobile bg-dark text-white" >
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
@@ -319,8 +324,19 @@
 								<span>Categore</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categoreys</a></li>
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Categores</a></li>
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Categorey</a></li>								
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-user-friends"></i>
+								<span>Customer</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Customers</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Add Customers</a></li>	
+                                <li class="nav-item"><a href="form_inputs.html" class="nav-link">Customers Review</a></li>							
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -364,17 +380,28 @@
 								<span>App Config</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="gallery_titles.html" class="nav-link">Banner Image</a></li>
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Banner Image</a></li>
 								<li class="nav-item"><a href="appconfig_about.html" class="nav-link">About</a></li>
 								<li class="nav-item"><a href="" class="nav-link">Terms and condition</a></li>								
 							</ul>
 						</li>
-						<li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">
+                        <li class="nav-item"><a href="ecommerce_orders_history.html" class="nav-link">
 							<i class="fa fa-shipping-fast"></i>
 							<span>Orders</span></a>
 						</li>
-						<!-- /page kits -->
+                        <li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class=" fa fa-cogs"></i>
+								<span>Setting</span></a>
 
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="user_pages_list.html" class="nav-link">Add User</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Users</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">User Role</a></li>								
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Permissions</a></li>
+							</ul>
+								
+						</li>
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -393,7 +420,7 @@
 			<div class="page-header page-header-dark">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">App Config</span> - Banner Imgae</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">App Config</span> - Terms & Condition</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -415,12 +442,12 @@
 					</div>
 				</div>
 
-				<div class="breadcrumb-line breadcrumb-line-dark header-elements-md-inline">
+				<div class="breadcrumb-line breadcrumb-line-dark text-white header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="gallery_titles.html" class="breadcrumb-item">App Config</a>
-							<span class="breadcrumb-item active">Banner Image</span>
+							<a href="form_inputs.html" class="breadcrumb-item">App Config</a>
+							<span class="breadcrumb-item active">Terms & Condition</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -439,7 +466,7 @@
 									Settings
 								</a>
 
-								<div class="dropdown-menu dropdown-menu-right bg-dark text-white">
+								<div class="dropdown-menu dropdown-menu-right">
 									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
 									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
 									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
@@ -451,153 +478,49 @@
 					</div>
 				</div>
 			</div>
+			<!-- /page header -->
+			<!-- Content area -->
 			<div class="content bg-dark text-white">
+				<!-- Form inputs -->
+				<div class="card bg-dark text-white">					
+					<div class="card-body">
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Terms & Condition</legend>
 
-				<!-- Image grid -->
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						Banner Image
-					</h6>
-					
-				</div>
-
-				<div class="row ">
-					<div class="col-sm-6 col-xl-3 ">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="assets/images/chicken-chaap.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-										
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Page Heading</label>
+									<div class="col-lg-4">
+										<input type="text" class="form-control"placeholder="enter page heading">
 									</div>
 								</div>
+                                <div class="form-group row">
+									<label class="col-form-label col-lg-2">Content Heading</label>
+									<div class="col-lg-4">
+										<input type="text" class="form-control"placeholder="enter content heading">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Email Address</label>
+									<div class="col-lg-4">
+										<input type="text" class="form-control" placeholder="enter your content......">
+									</div>
+								</div>				
+							<div class="text-start">
+								<button type="submit" class="btn btn-primary">Add Terms & Condition<!--<i class="icon-paperplane ml-2">--></i></button>
 							</div>
-						</div>
+						</form>
 					</div>
-					<div class="col-sm-6 col-xl-3 ">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="assets/images/chicken-chaap.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-3">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-
-									
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-xl-3">
-						<div class="card bg-dark text-white">
-							<div class="card-img-actions mx-1 mt-1">
-								<img class="card-img img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
-								<div class="card-img-actions-overlay card-img">
-									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
-										<i class="icon-plus3"></i>
-									</a>
-
-									
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-start flex-nowrap">
-									<div>
-										<h5 class="font-weight-semibold mr-2">Heading</h5>
-										<p class="font-size-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia in repellendus magnam doloremque itaque quod veniam, nam soluta voluptatum?</p>
-									</div>
-
-									<div class="list-icons list-icons-extended ml-auto">
-										
-										<a href="edit_banner_img.html" class="list-icons-item"><i class="fa fa-edit top-0"></i></a>
-										<a href="#" class="list-icons-item"><i class="icon-bin top-0"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
-
-				<div class="row">
-				</div>
-				<div class="row">				
-
-				</div>
-
-				<div class="row">
-				</div>
-
-			
+				<!-- /form inputs -->
+			</div>
+			<!-- /content area -->	
+			</div>
 			<!-- /footer -->
-
 		</div>
 		<!-- /main content -->
-
 	</div>
 	<!-- /page content -->
-
 </body>
 </html>
